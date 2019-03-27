@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84AA8FD721CCC27600EE165B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA8FD621CCC27600EE165B /* AppDelegate.swift */; };
+		84AA8FDE21CCC27700EE165B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AA8FDD21CCC27700EE165B /* Assets.xcassets */; };
+		84AA8FE121CCC27700EE165B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AA8FDF21CCC27700EE165B /* LaunchScreen.storyboard */; };
+		84AA8FF621CCC32C00EE165B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA8FF521CCC32C00EE165B /* HomeViewController.swift */; };
+		84AA8FF821CD037C00EE165B /* BubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA8FF721CD037C00EE165B /* BubbleViewController.swift */; };
+		B81F9E20224B5344004B0142 /* WPPopupStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F9E1A224B5344004B0142 /* WPPopupStyle.swift */; };
+		B81F9E21224B5344004B0142 /* WPBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F9E1B224B5344004B0142 /* WPBubbleView.swift */; };
+		B81F9E22224B5344004B0142 /* WPPopupToll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F9E1C224B5344004B0142 /* WPPopupToll.swift */; };
+		B81F9E23224B5344004B0142 /* WPSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F9E1D224B5344004B0142 /* WPSheetView.swift */; };
+		B81F9E24224B5344004B0142 /* WPPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F9E1E224B5344004B0142 /* WPPopupView.swift */; };
+		B81F9E25224B5344004B0142 /* WPAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F9E1F224B5344004B0142 /* WPAlertView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84AA8FD321CCC27600EE165B /* PopViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AA8FD621CCC27600EE165B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84AA8FDD21CCC27700EE165B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84AA8FE021CCC27700EE165B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84AA8FE221CCC27700EE165B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AA8FF521CCC32C00EE165B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		84AA8FF721CD037C00EE165B /* BubbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleViewController.swift; sourceTree = "<group>"; };
+		B81F9E1A224B5344004B0142 /* WPPopupStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPPopupStyle.swift; sourceTree = "<group>"; };
+		B81F9E1B224B5344004B0142 /* WPBubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPBubbleView.swift; sourceTree = "<group>"; };
+		B81F9E1C224B5344004B0142 /* WPPopupToll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPPopupToll.swift; sourceTree = "<group>"; };
+		B81F9E1D224B5344004B0142 /* WPSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPSheetView.swift; sourceTree = "<group>"; };
+		B81F9E1E224B5344004B0142 /* WPPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPPopupView.swift; sourceTree = "<group>"; };
+		B81F9E1F224B5344004B0142 /* WPAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPAlertView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84AA8FD021CCC27600EE165B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84AA8FCA21CCC27600EE165B = {
+			isa = PBXGroup;
+			children = (
+				B81F9E19224B5344004B0142 /* WPPopupView */,
+				84AA8FD521CCC27600EE165B /* PopViewDemo */,
+				84AA8FD421CCC27600EE165B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84AA8FD421CCC27600EE165B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84AA8FD321CCC27600EE165B /* PopViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84AA8FD521CCC27600EE165B /* PopViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				84AA8FD621CCC27600EE165B /* AppDelegate.swift */,
+				84AA8FF521CCC32C00EE165B /* HomeViewController.swift */,
+				84AA8FF721CD037C00EE165B /* BubbleViewController.swift */,
+				84AA8FDD21CCC27700EE165B /* Assets.xcassets */,
+				84AA8FDF21CCC27700EE165B /* LaunchScreen.storyboard */,
+				84AA8FE221CCC27700EE165B /* Info.plist */,
+			);
+			path = PopViewDemo;
+			sourceTree = "<group>";
+		};
+		B81F9E19224B5344004B0142 /* WPPopupView */ = {
+			isa = PBXGroup;
+			children = (
+				B81F9E1A224B5344004B0142 /* WPPopupStyle.swift */,
+				B81F9E1B224B5344004B0142 /* WPBubbleView.swift */,
+				B81F9E1C224B5344004B0142 /* WPPopupToll.swift */,
+				B81F9E1D224B5344004B0142 /* WPSheetView.swift */,
+				B81F9E1E224B5344004B0142 /* WPPopupView.swift */,
+				B81F9E1F224B5344004B0142 /* WPAlertView.swift */,
+			);
+			path = WPPopupView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84AA8FD221CCC27600EE165B /* PopViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AA8FE521CCC27700EE165B /* Build configuration list for PBXNativeTarget "PopViewDemo" */;
+			buildPhases = (
+				84AA8FCF21CCC27600EE165B /* Sources */,
+				84AA8FD021CCC27600EE165B /* Frameworks */,
+				84AA8FD121CCC27600EE165B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopViewDemo;
+			productName = PopViewDemo;
+			productReference = 84AA8FD321CCC27600EE165B /* PopViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84AA8FCB21CCC27600EE165B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = wangpeng;
+				TargetAttributes = {
+					84AA8FD221CCC27600EE165B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 84AA8FCE21CCC27600EE165B /* Build configuration list for PBXProject "PopViewDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84AA8FCA21CCC27600EE165B;
+			productRefGroup = 84AA8FD421CCC27600EE165B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84AA8FD221CCC27600EE165B /* PopViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84AA8FD121CCC27600EE165B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AA8FE121CCC27700EE165B /* LaunchScreen.storyboard in Resources */,
+				84AA8FDE21CCC27700EE165B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84AA8FCF21CCC27600EE165B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AA8FD721CCC27600EE165B /* AppDelegate.swift in Sources */,
+				B81F9E23224B5344004B0142 /* WPSheetView.swift in Sources */,
+				B81F9E24224B5344004B0142 /* WPPopupView.swift in Sources */,
+				B81F9E20224B5344004B0142 /* WPPopupStyle.swift in Sources */,
+				B81F9E25224B5344004B0142 /* WPAlertView.swift in Sources */,
+				84AA8FF821CD037C00EE165B /* BubbleViewController.swift in Sources */,
+				84AA8FF621CCC32C00EE165B /* HomeViewController.swift in Sources */,
+				B81F9E22224B5344004B0142 /* WPPopupToll.swift in Sources */,
+				B81F9E21224B5344004B0142 /* WPBubbleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84AA8FDF21CCC27700EE165B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84AA8FE021CCC27700EE165B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84AA8FE321CCC27700EE165B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84AA8FE421CCC27700EE165B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84AA8FE621CCC27700EE165B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4KH9866P7G;
+				INFOPLIST_FILE = PopViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.superchain.PopViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84AA8FE721CCC27700EE165B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4KH9866P7G;
+				INFOPLIST_FILE = PopViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.superchain.PopViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84AA8FCE21CCC27600EE165B /* Build configuration list for PBXProject "PopViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AA8FE321CCC27700EE165B /* Debug */,
+				84AA8FE421CCC27700EE165B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84AA8FE521CCC27700EE165B /* Build configuration list for PBXNativeTarget "PopViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AA8FE621CCC27700EE165B /* Debug */,
+				84AA8FE721CCC27700EE165B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84AA8FCB21CCC27600EE165B /* Project object */;
+}

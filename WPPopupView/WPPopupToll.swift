@@ -26,7 +26,7 @@ struct WPPopupToll {
     }
 }
 
-public extension UIView {
+extension UIView {
     
     /// x值
     public var popup_x: CGFloat{
@@ -163,7 +163,7 @@ public extension UIColor {
         if tempHex.hasPrefix("#") {
             tempHex = (tempHex as NSString).substring(from: 1)
         }
-
+        
         var range = NSRange(location: 0, length: 2)
         let rHex = (tempHex as NSString).substring(with: range)
         range.location = 2

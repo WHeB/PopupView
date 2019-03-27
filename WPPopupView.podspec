@@ -9,10 +9,10 @@
 Pod::Spec.new do |s|
 
   s.name         = "WPPopupView"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "自定义 Alert 弹窗；底部 Sheet 弹窗；气泡提示窗。"
   s.description  = <<-DESC
-                   自定义 Alert 弹窗；底部 Sheet 弹窗；气泡提示窗。
+                   Alert 弹窗；Sheet 弹窗；气泡提示窗。
                    DESC
   s.homepage     = "https://github.com/WHeB/PopupView"
   s.license      = "MIT"

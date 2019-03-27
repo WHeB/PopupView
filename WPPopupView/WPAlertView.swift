@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WPAlertView: UIView {
+open class WPAlertView: UIView {
     
     private var clickBlock: PopupClickButtonBlock?
     private var style: WPPopupStyle!
@@ -21,7 +21,7 @@ class WPAlertView: UIView {
     private var detailH: CGFloat = 0.0
     private var buttonH: CGFloat = 0.0
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.white
     }
@@ -85,7 +85,7 @@ class WPAlertView: UIView {
         }
         self.alertViewW = ScWidth * widthScale
     }
-
+    
     // 标题
     private func loadTitle(title: String) {
         let label = UILabel.init(frame: CGRect.init(x: padding, y: padding, width: self.labelW, height: self.titleH))
@@ -132,7 +132,7 @@ class WPAlertView: UIView {
         let line = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: self.alertViewW, height: lineHeight))
         line.backgroundColor = lineColor
         self.buttonsView.addSubview(line)
-
+        
         let button = UIButton.init(type: .custom)
         button.frame = CGRect.init(x: 0, y: line.popup_bottomY, width: self.alertViewW, height: buttonHeight - lineHeight)
         button.setTitle(buttons[0], for: .normal)
@@ -269,7 +269,7 @@ class WPAlertView: UIView {
             supView.removeFromSuperview()
         }
     }
-
+    
     /// hide
     @objc public func hideAlertView() {
         let supView: WPPopupView = self.superview as! WPPopupView
@@ -319,7 +319,7 @@ class WPAlertView: UIView {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WPBubbleView: UIView, UITableViewDataSource, UITableViewDelegate {
+open class WPBubbleView: UIView, UITableViewDataSource, UITableViewDelegate {
     
     private var clickBlock: PopupClickButtonBlock?
     private var style: WPPopupStyle!
@@ -132,11 +132,11 @@ class WPBubbleView: UIView, UITableViewDataSource, UITableViewDelegate {
         return tableView
     }()
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.sourceArray.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = CustomCell.cellWithTableView(tableView: tableView)
         if self.sourceArray.count > 0 {
             let item = self.sourceArray[indexPath.row]
@@ -296,7 +296,7 @@ class WPBubbleView: UIView, UITableViewDataSource, UITableViewDelegate {
         self.layer.addSublayer(lineShape)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

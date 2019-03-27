@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WPSheetView: UIView {
+open class WPSheetView: UIView {
     
     private var clickBlock: PopupClickButtonBlock?
     private var style: WPPopupStyle!
@@ -22,7 +22,7 @@ class WPSheetView: UIView {
     private var detailH: CGFloat = 0.0
     private var buttonH: CGFloat = 0.0
     
-     override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
@@ -224,7 +224,7 @@ class WPSheetView: UIView {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

@@ -8,9 +8,9 @@
 
 import UIKit
 
-typealias PopupClickButtonBlock = (_ buttonTitle: String, _ index: Int) -> Void
+public typealias PopupClickButtonBlock = (_ buttonTitle: String, _ index: Int) -> Void
 
-class WPPopupView: UIView {
+public class WPPopupView: UIView {
     
     private override init(frame: CGRect) {
         super.init(frame: frame)

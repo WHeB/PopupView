@@ -24,7 +24,7 @@ let space: CGFloat = 18.0
 // 行间距 主要是detailLabel
 let rowSpace: CGFloat = 5.0
 
-enum AnimationOptions {
+public enum AnimationOptions {
     case none // 默认
     case zoom // 先放大，再缩小，在还原;  对 sheet 无效
     case smallToBig // 从小变大; 对 sheet 无效
@@ -33,14 +33,14 @@ enum AnimationOptions {
 }
 
 /// BubbleView三角view指向
-enum TriangleOrientation {
+public enum TriangleOrientation {
     case top
     case left
     case buttom
     case right
 }
 
-struct WPPopupStyle {
+public struct WPPopupStyle {
     
     /// 动画样式
     public var animationOptions: AnimationOptions = .none
@@ -103,7 +103,7 @@ struct WPPopupStyle {
     /// 分割线起点
     public var lineSpace: (leftSpace: CGFloat, rightSpace: CGFloat) = (15, 0)
     
-    init() {}
+    public init() {}
 }
 
 

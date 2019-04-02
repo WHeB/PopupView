@@ -84,10 +84,10 @@ class BubbleViewController: UIViewController {
         
         var style = WPPopupStyle.init()
         style.animationOptions = .none
-        style.popupBgColor = UIColor.black
+        style.popupBgColor = UIColor.white
         style.touchHide = true
-        style.labelColor = UIColor.white
-        style.lineColor = UIColor.white
+        style.labelColor = UIColor.black
+        style.lineColor = UIColor.gray
         switch sender.tag {
         case 100:
             style.triangleOrientation = .top
@@ -100,7 +100,10 @@ class BubbleViewController: UIViewController {
         default:
             style.triangleOrientation = .top
         }
-        WPPopupView.showBubbleView(fromView: sender, style: style, viewSize: CGSize.init(width: 100, height: 200), imgNameAndTitleArray: [(imgName: nil, title: "发起群聊"), (imgName: nil, title: "添加朋友"), (imgName: nil, title: "扫一扫"), (imgName: nil, title: "收付款")]) { (string, index) in
+        
+        let array: ItemArray  = [(imgName: nil, title: "发起群聊"), (imgName: nil, title: "添加朋友"), (imgName: nil, title: "扫一扫"), (imgName: nil, title: "收付款")]
+        
+        WPPopupView.showBubbleView(fromView: sender, style: style, viewSize: CGSize.init(width: 100, height: 200), imgNameAndTitleArray: array) { (string, index) in
             print(string)
             print(index)
         }

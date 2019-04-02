@@ -10,6 +10,8 @@ import UIKit
 
 public typealias PopupClickButtonBlock = (_ buttonTitle: String, _ index: Int) -> Void
 
+public typealias ItemArray = [(imgName: String?, title: String)]
+
 public class WPPopupView: UIView {
     
     private override init(frame: CGRect) {
@@ -74,7 +76,7 @@ public class WPPopupView: UIView {
     }
     
     /// 创建BubbleView
-    public static func showBubbleView(fromView: UIView, style: WPPopupStyle, viewSize: CGSize, imgNameAndTitleArray: [(imgName: String? , title: String)], clickBlock: @escaping PopupClickButtonBlock) {
+    public static func showBubbleView(fromView: UIView, style: WPPopupStyle, viewSize: CGSize, imgNameAndTitleArray: ItemArray, clickBlock: @escaping PopupClickButtonBlock) {
         
         let selfView = WPPopupView.init(frame: CGRect.init(x: 0, y: 0, width: ScWidth, height: ScHeight))
         selfView.effectView.backgroundColor = style.coverBgColor
@@ -91,7 +93,7 @@ public class WPPopupView: UIView {
     }
     
     /// 创建BubbleView
-    public static func showBubbleView(startPoint: CGPoint, style: WPPopupStyle, viewSize: CGSize, imgNameAndTitleArray: [(imgName: String?, title: String)], clickBlock: @escaping PopupClickButtonBlock) {
+    public static func showBubbleView(startPoint: CGPoint, style: WPPopupStyle, viewSize: CGSize, imgNameAndTitleArray: ItemArray, clickBlock: @escaping PopupClickButtonBlock) {
         
         let selfView = WPPopupView.init(frame: CGRect.init(x: 0, y: 0, width: ScWidth, height: ScHeight))
         selfView.effectView.backgroundColor = style.coverBgColor

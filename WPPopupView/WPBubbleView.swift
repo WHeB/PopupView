@@ -13,14 +13,14 @@ open class WPBubbleView: UIView, UITableViewDataSource, UITableViewDelegate {
     private var clickBlock: PopupClickButtonBlock?
     private var style: WPPopupStyle!
     private var cellHeight: CGFloat = 50
-    private var sourceArray = [(String?, String)]()
+    private var sourceArray = ItemArray()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
     /// 通过触发显示的view 初始化BubbleView
-    public convenience init(fromReact: CGRect, style: WPPopupStyle, viewSize: CGSize, imageNameAndTitle dataArray: [(imgName: String?, title: String)], clickBlock: @escaping PopupClickButtonBlock) {
+    public convenience init(fromReact: CGRect, style: WPPopupStyle, viewSize: CGSize, imageNameAndTitle dataArray: ItemArray, clickBlock: @escaping PopupClickButtonBlock) {
         self.init(frame: CGRect.zero)
         self.backgroundColor = UIColor.clear
         self.style = style
@@ -35,7 +35,7 @@ open class WPBubbleView: UIView, UITableViewDataSource, UITableViewDelegate {
     }
     
     /// 通过自定义位置 初始化BubbleView
-    public convenience init(startPoint: CGPoint, style: WPPopupStyle, viewSize: CGSize, imageNameAndTitle dataArray: [(imgName: String?, title: String)], clickBlock: @escaping PopupClickButtonBlock) {
+    public convenience init(startPoint: CGPoint, style: WPPopupStyle, viewSize: CGSize, imageNameAndTitle dataArray: ItemArray, clickBlock: @escaping PopupClickButtonBlock) {
         self.init(frame: CGRect.zero)
         self.backgroundColor = UIColor.clear
         self.style = style
@@ -146,7 +146,7 @@ open class WPBubbleView: UIView, UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = self.sourceArray[indexPath.row]
         self.clickBlock!(item.1, indexPath.row)
         self.hideBubbleView()
@@ -317,7 +317,7 @@ class CustomCell: UITableViewCell {
             
             if model?.imgName == nil ||
                 (model?.imgName?.isEmpty)! { // 没有图片
-                self.titleLabel?.frame = CGRect.init(x: 15, y: 0, width: self.contentView.popup_width - 30, height: self.contentView.popup_height)
+                self.titleLabel?.frame = CGRect.init(x: 15, y: 0, width: cellW - 30, height: cellH)
                 self.titleLabel?.text = model?.title
             }else {
                 guard let img = UIImage.init(named: (model?.imgName)!) else {return}
